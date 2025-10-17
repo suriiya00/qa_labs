@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.*;
  
 import java.time.Duration;
  
-public class lab9 {
+public class lab9 extends TestCase{
  
     private WebDriver driver;
     private WebDriverWait wait;
@@ -120,3 +120,4 @@ public class lab9 {
     }
 }
  
+
