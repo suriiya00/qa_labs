@@ -33,8 +33,8 @@ public class lab6 {
  
         driver.findElement(By.xpath("//span[text()='My Account']")).click();
         driver.findElement(By.linkText("Login")).click();
-        driver.findElement(By.id("input-email")).sendKeys("charishma1760508771152@gmail.com");
-        driver.findElement(By.id("input-password")).sendKeys("Test@123");       
+        driver.findElement(By.id("input-email")).sendKeys("johndoe@gamil.com");
+        driver.findElement(By.id("input-password")).sendKeys("test1234");       
         driver.findElement(By.xpath("//input[@value='Login']")).click();
         System.out.println("Logged in successfully.");
  
@@ -135,4 +135,5 @@ public class lab6 {
         driver.quit();
     }
 }
+
  
