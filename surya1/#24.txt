@@ -1,0 +1,93 @@
+Started by user surya
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/oct22
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/oct22/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/suvham-kumar-patro/ASC-QE-Assignment.git # timeout=10
+Fetching upstream changes from https://github.com/suvham-kumar-patro/ASC-QE-Assignment.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.0'
+ > git fetch --tags --force --progress -- https://github.com/suvham-kumar-patro/ASC-QE-Assignment.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision 154b9e368ac72228ffaf441c851d29f0432e065d (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 154b9e368ac72228ffaf441c851d29f0432e065d # timeout=10
+Commit message: "Completed"
+ > git rev-list --no-walk 154b9e368ac72228ffaf441c851d29f0432e065d # timeout=10
+[oct22] $ /bin/sh -xe /tmp/jenkins4855817145076977777.sh
++ mvn clean install
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------------------< [0;36mOct2025:Oct2025[0;1m >---------------------------[m
+[[1;34mINFO[m] [1mBuilding Oct2025 0.0.1-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36mOct2025[0;1m ---[m
+[[1;34mINFO[m] Deleting /var/lib/jenkins/workspace/oct22/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mOct2025[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/oct22/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.13.0:compile[m [1m(default-compile)[m @ [36mOct2025[0;1m ---[m
+[[1;34mINFO[m] Recompiling the module because of [1mchanged source code[m.
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding [1mUTF-8[m, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 1 source file with javac [debug target 17] to target/classes
+[[1;33mWARNING[m] system modules path not set in conjunction with -source 17
+[[1;34mINFO[m] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36mOct2025[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /var/lib/jenkins/workspace/oct22/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mOct2025[0;1m ---[m
+[[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding [1mUTF-8[m, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 17 source files with javac [debug target 17] to target/test-classes
+[[1;33mWARNING[m] system modules path not set in conjunction with -source 17
+[[1;34mINFO[m] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.2.5:test[m [1m(default-test)[m @ [36mOct2025[0;1m ---[m
+[[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running [1mTestSuite[m
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+[[1;34mINFO[m] [1mTests run: [0;1m0[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.300 s -- in [1mTestSuite[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36mOct2025[0;1m ---[m
+[[1;34mINFO[m] Building jar: /var/lib/jenkins/workspace/oct22/target/Oct2025-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-install-plugin:2.4:install[m [1m(default-install)[m @ [36mOct2025[0;1m ---[m
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/oct22/target/Oct2025-0.0.1-SNAPSHOT.jar to /var/lib/jenkins/.m2/repository/Oct2025/Oct2025/0.0.1-SNAPSHOT/Oct2025-0.0.1-SNAPSHOT.jar
+[[1;34mINFO[m] Installing /var/lib/jenkins/workspace/oct22/pom.xml to /var/lib/jenkins/.m2/repository/Oct2025/Oct2025/0.0.1-SNAPSHOT/Oct2025-0.0.1-SNAPSHOT.pom
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  22.911 s
+[[1;34mINFO[m] Finished at: 2025-10-22T16:07:24+05:30
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+Finished: SUCCESS
